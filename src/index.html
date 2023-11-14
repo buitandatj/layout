@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-ui-display" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="menu__header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_1_891)">
+                    <path
+                        d="M23 10.9998H1C0.447715 10.9998 0 11.4475 0 11.9998C0 12.552 0.447715 12.9998 1 12.9998H23C23.5523 12.9998 24 12.552 24 11.9998C24 11.4475 23.5523 10.9998 23 10.9998Z"
+                        fill="#374957" />
+                    <path
+                        d="M23 4.00024H1C0.447715 4.00024 0 4.44796 0 5.00024C0 5.55253 0.447715 6.00024 1 6.00024H23C23.5523 6.00024 24 5.55253 24 5.00024C24 4.44796 23.5523 4.00024 23 4.00024Z"
+                        fill="#374957" />
+                    <path
+                        d="M23 18H1C0.447715 18 0 18.4477 0 19C0 19.5523 0.447715 20 1 20H23C23.5523 20 24 19.5523 24 19C24 18.4477 23.5523 18 23 18Z"
+                        fill="#374957" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1_891">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <div>
+                <ul class="menu__main">
+                    <li><a href="#" class="menu__child">Categories</a></li>
+                    <li><a href="#" class="menu__child">Course</a></li>
+                    <li><a href="#" class="menu__child">Blogs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="right__header">
+            <div class="language__header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <g clip-path="url(#clip0_1_904)">
+                        <path
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                            fill="#F0F0F0" />
+                        <path
+                            d="M1.65375 3.12915C1.02534 3.94674 0.551495 4.88909 0.275589 5.91281H4.4374L1.65375 3.12915Z"
+                            fill="#0E34A0" />
+                        <path
+                            d="M15.7244 5.91278C15.4485 4.88909 14.9746 3.94674 14.3462 3.12915L11.5626 5.91278H15.7244Z"
+                            fill="#0E34A0" />
+                        <path
+                            d="M0.275589 10.087C0.551526 11.1107 1.02537 12.0531 1.65375 12.8706L4.43731 10.087H0.275589Z"
+                            fill="#0E34A0" />
+                        <path
+                            d="M12.8706 1.65382C12.053 1.02542 11.1107 0.551572 10.0869 0.275635V4.43742L12.8706 1.65382Z"
+                            fill="#0E34A0" />
+                        <path d="M3.1291 14.3463C3.9467 14.9747 4.88904 15.4486 5.91273 15.7245V11.5627L3.1291 14.3463Z"
+                            fill="#0E34A0" />
+                        <path
+                            d="M5.9127 0.275635C4.88901 0.551572 3.94667 1.02542 3.1291 1.65379L5.9127 4.43738V0.275635Z"
+                            fill="#0E34A0" />
+                        <path d="M10.087 15.7245C11.1107 15.4486 12.053 14.9747 12.8706 14.3463L10.087 11.5627V15.7245Z"
+                            fill="#0E34A0" />
+                        <path
+                            d="M11.5627 10.087L14.3462 12.8707C14.9746 12.0531 15.4485 11.1107 15.7244 10.087H11.5627Z"
+                            fill="#0E34A0" />
+                        <path
+                            d="M15.9323 6.95653H9.04353H9.0435V0.0677188C8.70191 0.02325 8.35366 0 8 0C7.64628 0 7.29809 0.02325 6.95653 0.0677188V6.95647V6.9565H0.0677188C0.02325 7.29809 0 7.64634 0 8C0 8.35372 0.02325 8.70191 0.0677188 9.04347H6.95647H6.9565V15.9323C7.29809 15.9768 7.64628 16 8 16C8.35366 16 8.70191 15.9768 9.04347 15.9323V9.04353V9.0435H15.9323C15.9768 8.70191 16 8.35372 16 8C16 7.64634 15.9768 7.29809 15.9323 6.95653Z"
+                            fill="#D80027" />
+                        <path
+                            d="M10.087 10.0869L13.6569 13.6568C13.821 13.4927 13.9777 13.3211 14.1271 13.1432L11.0708 10.0869H10.087V10.0869Z"
+                            fill="#D80027" />
+                        <path
+                            d="M5.91268 10.087H5.91262L2.34277 13.6569C2.5069 13.8211 2.67849 13.9777 2.85637 14.1271L5.91268 11.0708V10.087Z"
+                            fill="#D80027" />
+                        <path
+                            d="M5.91305 5.91274V5.91268L2.34317 2.34277C2.17899 2.5069 2.02236 2.67849 1.87292 2.85637L4.92927 5.91271H5.91305V5.91274Z"
+                            fill="#D80027" />
+                        <path
+                            d="M10.087 5.91308L13.6569 2.34314C13.4928 2.17896 13.3212 2.02233 13.1433 1.87292L10.087 4.92927V5.91308Z"
+                            fill="#D80027" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_904">
+                            <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="title__language">English</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="#828282" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <div class="bell__header">
+                <div class="bell">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 24 27" fill="none">
+                        <path
+                            d="M2.70961 15.8933L2.90958 15.8525V15.6484V9.44485C2.90958 4.65058 6.81023 0.75 11.6041 0.75C16.3979 0.75 20.2986 4.65058 20.2986 9.44486V15.6484V15.8525L20.4985 15.8933C21.9004 16.1797 22.958 17.4226 22.958 18.9066C22.958 20.6023 21.5781 21.9819 19.8822 21.9819H16.3974H16.1748L16.1491 22.203C15.8843 24.4779 13.948 26.25 11.6041 26.25C9.26015 26.25 7.32385 24.4779 7.05906 22.203L7.03333 21.9819H6.81074H3.32592C1.63006 21.9819 0.250122 20.6023 0.250122 18.9066C0.250122 17.4226 1.30776 16.1797 2.70961 15.8933ZM9.36027 21.9819H9.04002L9.11775 22.2926C9.39627 23.4059 10.4048 24.2338 11.6041 24.2338C12.8033 24.2338 13.8119 23.4059 14.0904 22.2926L14.1681 21.9819H13.8479H9.36027ZM19.8822 19.9658C20.4665 19.9658 20.9418 19.4911 20.9418 18.9066C20.9418 18.3219 20.4665 17.8474 19.8822 17.8473H19.2904C18.7336 17.8473 18.2824 17.3958 18.2824 16.8392V9.44485C18.2824 5.76194 15.2866 2.7661 11.6041 2.7661C7.92156 2.7661 4.92573 5.76194 4.92573 9.44485V16.8392C4.92573 17.3958 4.47451 17.8473 3.91768 17.8473H3.32592C2.74163 17.8473 2.26628 18.3219 2.26628 18.9066C2.26628 19.4911 2.7416 19.9658 3.32592 19.9658H19.8822Z"
+                            fill="#828282" stroke="white" stroke-width="0.5" />
+                    </svg>
+                </div>
+                <div class="ping__header">
+                    <img src="./public/images/14.png" alt="">
+                </div>
+            </div>
+            <div class="users__header">
+                <div class="background__user"></div>
+                <div class="info__user">
+                    <div class="name__user">Wiliam</div>
+                    <div class="position__user">UI/UX Design</div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="#828282" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner__main_content">
+            <div class="banner__main">
+                <h3>The Complete Figma Course - Designing Mobile & Web App UI/UX</h3>
+                <p>In this Adobe Illustrator Advanced course we'll learn Advanced techniques for graphic design, logo
+                    design
+                    & illustration.</p>
+                <div class="evaluate__banner">
+                    <div class="evaluate__left">
+                        <div class="title__beginner">
+                            <p>Beginner</p>
+                        </div>
+                        <div class="reviews__start">
+                            <div class="start">
+                                <img src="./public/images/Group.png" alt="start">
+                                <img src="./public/images/Group.png" alt="start">
+                                <img src="./public/images/Group.png" alt="start">
+                                <img src="./public/images/Group.png" alt="start">
+                                <img src="./public/images/Group.png" alt="start">
+                            </div>
+                            <div class="reviews">(11,429 reviews)</div>
+                        </div>
+
+                    </div>
+                    <div class="evaluate__right">
+                        <div class="studients">
+                            <strong>12</strong>
+                            <p>Studiens enrolled</p>
+                        </div>
+                        <div class="address__banner"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_1_82)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.99997 0.719727C1.74076 0.719727 0.719971 1.74052 0.719971 2.99973V8.99973C0.719971 10.2589 1.74076 11.2797 2.99997 11.2797H8.99997C10.2592 11.2797 11.28 10.2589 11.28 8.99973V4.79973C11.28 4.53463 11.0651 4.31973 10.8 4.31973C10.5349 4.31973 10.32 4.53463 10.32 4.79973V5.51973H9.54795C8.70059 5.51973 7.92313 5.98966 7.52925 6.73991L7.28071 7.21331C7.05267 7.64766 6.60256 7.91973 6.11199 7.91973H5.90383C5.38439 7.91973 4.91325 7.61509 4.70008 7.14141L4.57529 6.8641C4.20712 6.04591 3.39332 5.51973 2.49611 5.51973H1.67997V2.99973C1.67997 2.27071 2.27096 1.67973 2.99997 1.67973H7.19997C7.46506 1.67973 7.67997 1.46482 7.67997 1.19973C7.67997 0.93463 7.46506 0.719727 7.19997 0.719727H2.99997ZM1.67997 6.47973V8.99973C1.67997 9.72874 2.27096 10.3197 2.99997 10.3197H8.99997C9.72898 10.3197 10.32 9.72874 10.32 8.99973V6.47973H9.54795C9.05738 6.47973 8.60727 6.75179 8.37923 7.18614L8.13069 7.65954C7.73681 8.40979 6.95935 8.87973 6.11199 8.87973H5.90383C5.00662 8.87973 4.19282 8.35354 3.82465 7.53535L3.69986 7.25805C3.48669 6.78436 3.01555 6.47973 2.49611 6.47973H1.67997Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.91997 2.39973C7.91997 1.47189 8.67213 0.719727 9.59997 0.719727C10.5278 0.719727 11.28 1.47189 11.28 2.39973C11.28 3.32757 10.5278 4.07973 9.59997 4.07973C8.67213 4.07973 7.91997 3.32757 7.91997 2.39973ZM9.59997 1.67973C9.20232 1.67973 8.87997 2.00208 8.87997 2.39973C8.87997 2.79737 9.20232 3.11973 9.59997 3.11973C9.99761 3.11973 10.32 2.79737 10.32 2.39973C10.32 2.00208 9.99761 1.67973 9.59997 1.67973Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_82">
+                                        <rect width="12" height="12" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>English, Korea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__banner">
+                    <div>
+                        <p>Created by John</p> <strong>David, iPhuong</strong>
+                    </div>
+                    <div>
+                        <p>Last updated</p> <strong>Tue, 01 May 2022</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__content__web">
+        <main class="main__content__left">
+            <div class="carousel__main ">
+                <div class="title__content">
+                    <h3>Testimonnials</h3>
+                </div>
+                <div class="carousel">
+                    <img src="./public/images/Rectangle 1.png" alt="carousel" style="margin-right: -15px;">
+                    <img src="./public/images/Rectangle 2.png" alt="carousel">
+                    <img src="./public/images/Rectangle 3.png" alt="carousel" style="margin-left: -15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                        <g clip-path="url(#clip0_1_99)">
+                            <g filter="url(#filter0_d_1_99)">
+                                <path
+                                    d="M20.6758 0.363525C9.36417 0.363525 0.194244 9.53345 0.194244 20.8451C0.194244 32.1568 9.36417 41.3267 20.6758 41.3267C31.9875 41.3267 41.1574 32.1568 41.1574 20.8451C41.1454 9.53851 31.9825 0.375612 20.6758 0.363525ZM29.3014 21.4977C29.1597 21.7821 28.9292 22.0127 28.6446 22.1545V22.1618L16.9409 28.0137C16.2181 28.3749 15.3394 28.0818 14.9782 27.359C14.8755 27.1535 14.8226 26.9267 14.8239 26.697V14.9933C14.8236 14.1853 15.4782 13.53 16.2862 13.5296C16.5135 13.5295 16.7376 13.5823 16.9409 13.6839L28.6446 19.5358C29.3678 19.8962 29.6619 20.7746 29.3014 21.4977Z"
+                                    fill="white" />
+                            </g>
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_1_99" x="-2.14651" y="0.363525" width="45.6447" height="45.6447"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="2.34075" />
+                                <feGaussianBlur stdDeviation="1.17038" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_99" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_99"
+                                    result="shape" />
+                            </filter>
+                            <clipPath id="clip0_1_99">
+                                <rect width="40.9632" height="40.9632" fill="white"
+                                    transform="translate(0.195312 0.363525)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="list__carousel">
+                    <div class="list__child"></div>
+                    <div class="list__child_active"></div>
+                    <div class="list__child"></div>
+                    <div class="list__child"></div>
+                    <div class="list__child"></div>
+                </div>
+            </div>
+            <div class="content__main">
+                <div class="content">
+                    <div class="overview">
+                        <h4>Course Overview</h4>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                            as
+                            opposed to using 'Content here, content here', making it look like readable English.</p>
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model
+                            text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                        <p> Various versions have evolved over the years, sometimes by accident,
+                            sometimes on purpose (injected humour and the like).</p>
+                        <div class="view__more">
+                            <p>View more</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                fill="none">
+                                <path d="M7.5 15.5497L12.5 10.5497L7.5 5.54968" stroke="#0E34A0" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="learn">
+                        <h4>What will i learn?</h4>
+                        <div class="list__learn">
+                            <div class="list__learn__top">
+                                <div class="list__learn_child"><img src="./public/images/check.png" alt="">
+                                    <p>You will be able to earn more using these new Illustrator skills.</p>
+                                </div>
+                                <div class="list__learn_child"><img src="./public/images/check.png" alt="">
+                                    <p>You will be able to add 'Advanced Illustrator User' to your CV.</p>
+                                </div>
+                                <div class="list__learn_child"><img src="./public/images/check.png" alt="">
+                                    <p>Speed up your productivity & workflow.</p>
+                                </div>
+                            </div>
+
+                            <div class="list__learn__bot">
+                                <div class="list__learn_child"><img src="./public/images/check.png" alt="">
+                                    <p>You will build your own animated gifs.</p>
+                                </div>
+                                <div class="list__learn_child"><img src="./public/images/check.png" alt="">
+                                    <p>Depth & perspective.</p>
+                                </div>
+                                <div class="list__learn_child"><img src="./public/images/check.png" alt="">
+                                    <p>Be able to turn hyphenation off once and for all.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="requirements">
+                        <h4>Requirements</h4>
+                        <div class="list__require">
+                            <div class="list__require_child"><img src="./public/images/check.png" alt="">
+                                <p>Any version of Adobe Photoshop, preferably the CC (Creative Cloud) version.</p>
+                            </div>
+                            <div class="list__require_child"><img src="./public/images/check.png" alt="">
+                                <p>Basic knowledge of Illustrator is required. I recommend watching my Illustrator
+                                    Essentials course before this course.</p>
+                            </div>
+                            <div class="list__require_child"><img src="./public/images/check.png" alt="">
+                                <p>If you know how to draw simple icons & you already know what an anchor point is. Then
+                                    this course if for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="curriculum">
+                        <div class="top__curriculum">
+                            <h4>Curriculum for this course</h4>
+                            <div class="right__time">
+                                <div class="right__time__child">
+                                    <img src="./public/images/Frame.png" alt="">
+                                    <p>00:28:00 hours</p>
+                                </div>
+                                <div class="right__time__child">
+                                    <img src="./public/images/Frame (1).png" alt="">
+                                    <p>22 Lectures</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center__curriculum">
+                            <div class="intro__curriculum ">
+                                <div class="introduction">
+                                    <img src="./public/images/check.png" alt="">
+                                    <p>Introduction</p>
+                                </div>
+                                <div class="right__intro ">
+                                    <div class="right__intro__child">
+                                        <img src="./public/images/Frame.png" alt="">
+                                        <p>00:28:00 hours</p>
+                                    </div>
+                                    <div class="right__intro__child">
+                                        <img src="./public/images/Frame (1).png" alt="">
+                                        <p>1 Lectures</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/Frame_watch.png" alt="">
+                                        <p style="color:#0E34A0 ;">Introduction to Advanced Adobe Illustrator CC</p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/check.png" alt="">
+                                        <p style="color:#0E34A0 ;">Welcome to the Adobe Illustrator Essentials Course
+                                        </p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/Frame_watch.png" alt="">
+                                        <p>Adobe Illustrator CC design quiz</p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <div><img src="./public/images/lock1.png" alt=""></div>
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/Frame_watch.png" alt="">
+                                        <p>Adobe Illustrator CC test quiz</p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <img src="./public/images/lock1.png" alt="">
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="intro__curriculum ">
+                                <div class="introduction">
+                                    <img src="./public/images/check.png" alt="">
+                                    <p>Drawing</p>
+                                </div>
+                                <div class="right__intro ">
+                                    <div class="right__intro__child">
+                                        <img src="./public/images/Frame.png" alt="">
+                                        <p>00:28:00 hours</p>
+                                    </div>
+                                    <div class="right__intro__child">
+                                        <img src="./public/images/Frame (1).png" alt="">
+                                        <p>3 Lectures</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/Frame_watch.png" alt="">
+                                        <p>Color & Patterns</p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <div><img src="./public/images/lock1.png" alt=""></div>
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/Frame_watch.png" alt="">
+                                        <p>Typography</p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <div><img src="./public/images/lock1.png" alt=""></div>
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/Frame_watch.png" alt="">
+                                        <p>Strokes & Lines</p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <div><img src="./public/images/lock1.png" alt=""></div>
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__intro">
+                                <div class="list__intro__main">
+                                    <div class="list__intro__child">
+                                        <img src="./public/images/Frame_watch.png" alt="">
+                                        <p>Depth, Perspective & 3D</p>
+                                    </div>
+                                    <div class="time__intro_right">
+                                        <div><img src="./public/images/lock1.png" alt=""></div>
+                                        <p>00:22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h4>About Instructor</h4>
+                        <div class="about__main">
+                            <div class="about__child">
+                                <div class="about__info__child">
+                                    <div class="info__instructor">
+                                        <img src="./public/images/Ellipse 6 (1).png" alt="" width="81px" height="81px">
+                                        <div class="info__instructor__child">
+                                            <p>John David</p>
+                                            <div class="reviews__instructor">
+                                                <p>6 reviews</p>
+                                                <li>2 students</li>
+                                                <li>14 courses</li>
+                                            </div>
+                                            <div class="courses_instructor">
+                                                <p>Javascript</p>
+                                                <p>JQuery</p>
+                                                <p>PHP</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="introduce__instructor">
+                                        <p>Johns David has a BS and MS in Mechanical Engineering from Santa Clara
+                                            University
+                                            and years of experience as a professional instructor and trainer for Data
+                                            Science and programming.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__child">
+                                <div class="about__info__child">
+                                    <div class="info__instructor">
+                                        <img src="./public/images/Ellipse 6.png" alt="" width="81px" height="81px">
+                                        <div class="info__instructor__child">
+                                            <p>Dave Franco</p>
+                                            <div class="reviews__instructor">
+                                                <p>6 reviews</p>
+                                                <li>2 students</li>
+                                                <li>14 courses</li>
+                                            </div>
+                                            <div class="courses_instructor">
+                                                <p>Adobe illustrator CC 22</p>
+                                                <p>Adobe Photoshop CC 22</p>
+                                                <p>UI/UX</p>
+                                                <p>Ad Design</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="introduce__instructor">
+                                        <p>Hi, I'm Dave! I have been identified as one of the Academy-LMS Top
+                                            Instructors
+                                            and all my premium courses have recently earned them best-selling status for
+                                            outstanding performance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <h4>Student Feedback</h4>
+                        <div class="feedback__main">
+                            <div class="feedback__main_right">
+                                <p>3.6</p>
+                                <div style="display: flex;flex-direction: column; align-items:center;gap:6px">
+                                    <div>
+                                        <img src="./public/images/Start_gold.png" alt="">
+                                        <img src="./public/images/Start_gold.png" alt="">
+                                        <img src="./public/images/Start_gold.png" alt="">
+                                        <img src="./public/images/Start_gold.png" alt="">
+                                        <img src="./public/images/Start_gold.png" alt="">
+                                    </div>
+                                    <div style="font-size: 16px;font-weight: 300;"> 200 reviews</div>
+                                </div>
+                            </div>
+                            <div class="feedback__main_left">
+                                <div class="feedback__main_left_child">
+                                    <div>
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                    </div>
+                                    <div class="check__feedback">
+                                        <div class="feedbacked"></div>
+                                    </div>
+                                    <div style="font-weight: 300;">
+                                        (20)
+                                    </div>
+                                </div>
+                                <div class="feedback__main_left_child">
+                                    <div>
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                    </div>
+                                    <div class="check__feedback">
+                                        <div class="feedbacked_2"></div>
+                                    </div>
+                                    <div style="font-weight: 300;">
+                                        (20)
+                                    </div>
+                                </div>
+                                <div class="feedback__main_left_child">
+                                    <div>
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                    </div>
+                                    <div class="check__feedback">
+                                        <div class="feedbacked_3"></div>
+                                    </div>
+                                    <div style="font-weight: 300;">
+                                        (20)
+                                    </div>
+                                </div>
+                                <div class="feedback__main_left_child">
+                                    <div>
+                                        <img src="./public/images/start_grey.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                    </div>
+                                    <div class="check__feedback">
+                                        <div class="feedbacked_4"></div>
+                                    </div>
+                                    <div style="font-weight: 300;">
+                                        (20)
+                                    </div>
+                                </div>
+                                <div class="feedback__main_left_child">
+                                    <div>
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                        <img src="./public/images/Start_gold.png" alt="" width="16px" height="16px">
+                                    </div>
+                                    <div class="check__feedback">
+                                        <div class="feedbacked_5"></div>
+                                    </div>
+                                    <div style="font-weight: 300;">
+                                        (20)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main class="main__content__right">
+            <div class="card_img">
+            </div>
+            <div class="price__card">
+                <p>From <strong>$200.99</strong> /month</p>
+            </div>
+            <div class="list__btn">
+                <div class="btn btn__wishlist">
+                    <p>ADD TO WISHLIST</p>
+                </div>
+                <div class="btn btn__cart">
+                    <p>ADD TO CART</p>
+                </div>
+                <div class=" btn btn__basic">Basic Plan</div>
+                <a href="#" class="upgradenow">Upgrade Now</a>
+            </div>
+            <div class="includes">
+                <div class="title_includes">Includes:</div>
+                <div class="list_includes">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_1_444)">
+                                <path
+                                    d="M8.00008 0.666992C6.54969 0.666992 5.13186 1.09708 3.9259 1.90288C2.71994 2.70868 1.78001 3.85399 1.22497 5.19398C0.669925 6.53397 0.524701 8.00846 0.807659 9.43099C1.09062 10.8535 1.78905 12.1602 2.81464 13.1858C3.84022 14.2114 5.1469 14.9098 6.56942 15.1928C7.99195 15.4757 9.46644 15.3305 10.8064 14.7754C12.1464 14.2204 13.2917 13.2805 14.0975 12.0745C14.9033 10.8685 15.3334 9.45072 15.3334 8.00033C15.3311 6.05611 14.5578 4.19218 13.183 2.81741C11.8082 1.44264 9.9443 0.669286 8.00008 0.666992ZM8.00008 14.0003C6.8134 14.0003 5.65336 13.6484 4.66666 12.9891C3.67997 12.3299 2.91093 11.3928 2.45681 10.2964C2.00268 9.20007 1.88386 7.99367 2.11537 6.82978C2.34688 5.6659 2.91833 4.5968 3.75744 3.75768C4.59656 2.91857 5.66566 2.34713 6.82954 2.11561C7.99343 1.8841 9.19983 2.00292 10.2962 2.45705C11.3925 2.91117 12.3296 3.68021 12.9889 4.6669C13.6482 5.6536 14.0001 6.81364 14.0001 8.00033C13.9981 9.59103 13.3654 11.116 12.2406 12.2408C11.1158 13.3656 9.59079 13.9984 8.00008 14.0003Z"
+                                    fill="black" />
+                                <path
+                                    d="M8.66683 7.72465V4.00065C8.66683 3.82384 8.59659 3.65427 8.47157 3.52925C8.34654 3.40422 8.17697 3.33398 8.00016 3.33398C7.82335 3.33398 7.65378 3.40422 7.52876 3.52925C7.40373 3.65427 7.3335 3.82384 7.3335 4.00065V8.00065C7.33353 8.17745 7.4038 8.34699 7.52883 8.47198L9.52883 10.472C9.65456 10.5934 9.82297 10.6606 9.99776 10.6591C10.1726 10.6576 10.3398 10.5875 10.4634 10.4639C10.587 10.3403 10.6571 10.173 10.6586 9.99825C10.6601 9.82345 10.5929 9.65505 10.4715 9.52932L8.66683 7.72465Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_444">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p >00:53:01 Hours On demand videos</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_1_451)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.00001 0.960022C2.32106 0.960022 0.960007 2.32108 0.960007 4.00002V12C0.960007 13.679 2.32106 15.04 4.00001 15.04H12C13.679 15.04 15.04 13.679 15.04 12V6.40002C15.04 6.04657 14.7535 5.76002 14.4 5.76002C14.0466 5.76002 13.76 6.04657 13.76 6.40002V7.36002H12.7306C11.6008 7.36002 10.5642 7.9866 10.039 8.98693L9.70765 9.61813C9.40361 10.1973 8.80346 10.56 8.14937 10.56H7.87181C7.17924 10.56 6.55105 10.1538 6.26682 9.52226L6.10044 9.15252C5.60954 8.06161 4.52447 7.36002 3.3282 7.36002H2.24001V4.00002C2.24001 3.02801 3.02799 2.24002 4.00001 2.24002H9.60001C9.95346 2.24002 10.24 1.95348 10.24 1.60002C10.24 1.24656 9.95346 0.960022 9.60001 0.960022H4.00001ZM2.24001 8.64002V12C2.24001 12.972 3.02799 13.76 4.00001 13.76H12C12.972 13.76 13.76 12.972 13.76 12V8.64002H12.7306C12.0766 8.64002 11.4764 9.00277 11.1724 9.58191L10.841 10.2131C10.3158 11.2134 9.27917 11.84 8.14937 11.84H7.87181C6.67554 11.84 5.59047 11.1384 5.09957 10.0475L4.93319 9.67778C4.64897 9.0462 4.02077 8.64002 3.3282 8.64002H2.24001Z"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.56 3.20002C10.56 1.9629 11.5629 0.960022 12.8 0.960022C14.0371 0.960022 15.04 1.9629 15.04 3.20002C15.04 4.43714 14.0371 5.44002 12.8 5.44002C11.5629 5.44002 10.56 4.43714 10.56 3.20002ZM12.8 2.24002C12.2698 2.24002 11.84 2.66983 11.84 3.20002C11.84 3.73021 12.2698 4.16002 12.8 4.16002C13.3302 4.16002 13.76 3.73021 13.76 3.20002C13.76 2.66983 13.3302 2.24002 12.8 2.24002Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_451">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p> 13 Lessons</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_1_459)">
+                                <path
+                                    d="M12.3606 2.41863V2.76747C12.3606 2.77933 12.3613 2.79119 12.362 2.80305V2.80794L12.3634 2.82119L12.3641 2.82747C12.376 2.95096 12.4241 3.04166 12.4869 3.10794C12.5825 3.21957 12.7248 3.29073 12.8839 3.29073C12.8839 3.29073 13.4071 3.25376 13.4071 2.76328V2.41863C13.4071 1.91002 13.2048 1.42164 12.8455 1.06163C12.4855 0.702328 11.9971 0.5 11.4885 0.5C9.20639 0.5 4.70075 0.5 2.41863 0.5C1.91002 0.5 1.42164 0.702328 1.06164 1.06163C0.702328 1.42164 0.5 1.91002 0.5 2.41863V8.69778C0.5 9.20639 0.702328 9.69477 1.06164 10.0548C1.42164 10.4141 1.91002 10.6164 2.41863 10.6164H6.65125C6.94009 10.6164 7.17451 10.382 7.17451 10.0931C7.17451 9.8043 6.94009 9.56988 6.65125 9.56988C6.65125 9.56988 4.36307 9.56988 2.41863 9.56988C2.187 9.56988 1.96583 9.47779 1.80188 9.31453C1.63862 9.15057 1.54652 8.92941 1.54652 8.69778C1.54652 6.99264 1.54652 4.12377 1.54652 2.41863C1.54652 2.187 1.63862 1.96583 1.80188 1.80188C1.96583 1.63862 2.187 1.54652 2.41863 1.54652H11.4885C11.7201 1.54652 11.9413 1.63862 12.1053 1.80188C12.2685 1.96583 12.3606 2.187 12.3606 2.41863Z"
+                                    fill="black" stroke="black" stroke-width="0.5" />
+                                <path
+                                    d="M7.06046 12.3604H3.75227C3.46412 12.3604 3.2297 12.5948 3.229 12.8836C3.229 13.1725 3.46412 13.4069 3.75227 13.4069H7.06116C7.3493 13.4069 7.58442 13.1725 7.58442 12.8836C7.58372 12.5948 7.3493 12.3604 7.06046 12.3604Z"
+                                    fill="black" stroke="black" stroke-width="0.5" />
+                                <path
+                                    d="M15.4997 7.90691C15.4997 6.84713 14.6409 5.98828 13.5811 5.98828C12.739 5.98828 11.6694 5.98828 10.8273 5.98828C9.76824 5.98828 8.90869 6.84713 8.90869 7.90691V13.4884C8.90869 14.5482 9.76824 15.407 10.8273 15.407H13.5811C14.6409 15.407 15.4997 14.5482 15.4997 13.4884V7.90691ZM14.4532 7.90691V13.4884C14.4532 13.9698 14.0625 14.3605 13.5811 14.3605C12.739 14.3605 11.6694 14.3605 10.8273 14.3605C10.3459 14.3605 9.95522 13.9698 9.95522 13.4884V7.90691C9.95522 7.42551 10.3459 7.03481 10.8273 7.03481H13.5811C14.0625 7.03481 14.4532 7.42551 14.4532 7.90691Z"
+                                    fill="black" stroke="black" stroke-width="0.5" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_459">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p>Access on Mobile and TV</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div style="display: flex; align-items: center;">
+                    <h5>Skill</h5>
+                    <div class="line"></div>
+                </div>
+                <div class="list__skill">
+                    <div class="skill__child">UX/UI Design</div>
+                    <div class="skill__child">SEO</div>
+                </div>
+            </div>
+            <div class="skills">
+                <div style="display: flex; align-items: center;">
+                    <h5>Career Path</h5>
+                    <div class="line"></div>
+                </div>
+                <div class="list__skill">
+                    <div class="skill__child">Front End Engineer</div>
+                    <div class="skill__child">UX/UI Design</div>
+                </div>
+            </div>
+            <div class="skills">
+                <div style="display: flex; align-items: center;">
+                    <h5>Department</h5>
+                    <div class="line"></div>
+                </div>
+                <div class="list__skill">
+                    <div class="skill__child">Back End Engineer</div>
+                    <div class="skill__child">Front End Engineer</div>
+                </div>
+            </div>
+            <div class="skills">
+                <div style="display: flex; align-items: center;">
+                    <h5>BU</h5>
+                    <div class="line"></div>
+                </div>
+                <div class="list__skill">
+                    <div class="skill__child">Back End Engineer</div>
+                    <div class="skill__child">UX/UI Design</div>
+                </div>
+            </div>
+            <div class="skills">
+                <div style="display: flex; align-items: center;">
+                    <h5>Industry</h5>
+                    <div class="line"></div>
+                </div>
+                <div class="list__skill" style="flex-wrap: wrap;">
+                    <div class="skill__child">Development</div>
+                    <div class="skill__child">Learning Machine</div>
+                    <div class="skill__child">Design</div>
+                    <div class="skill__child">Security</div>
+                    <div class="skill__child">Software </div>
+                    <div class="skill__child">Hardware</div>
+                    <div class="skill__child">Network Security</div>
+                </div>
+            </div>
+            <div class="skills">
+                <div style="display: flex; align-items: center;">
+                    <h5>Referrnal Link</h5>
+                    <div class="line"></div>
+                </div>
+                <div class="link__card">
+                    <a href="#" style="color: #3175c1;">https://www.abc.com/referral_link.html</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="main__footer">
+            <div class="top__footer">
+                <p class="logo__footer">LOGO</p>
+                <div class="contact__footer">
+                    <div>
+                        <div>Udemy Business</div>
+                        <div>Teach on Udemy</div>
+                        <div>Abouts us</div>
+                        <div>Contact us</div>
+                    </div>
+                    <div>
+                        <div>Udemy Business</div>
+                        <div>Teach on Udemy</div>
+                        <div>Abouts us</div>
+                        <div>Contact us</div>
+                    </div>
+                    <div>
+                        <div>Udemy Business</div>
+                        <div>Teach on Udemy</div>
+                        <div>Abouts us</div>
+                        <div>Contact us</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="bot__footer">
+                <div> © 2022 ABC, Inc.</div>
+                <div style="display: flex;gap:32px;align-items: center;">
+                    Follow us
+                    <div style="display: flex; gap:16px;">
+                        <img src="./public/images/twitter.png" alt="">
+                        <img src="./public/images/facebook.png" alt="">
+                        <img src="./public/images/instagram.png" alt="">
+                        <img src="./public/images/linkedin.png" alt="">
+                        <img src="./public/images/share.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
