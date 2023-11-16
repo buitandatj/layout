@@ -1,0 +1,327 @@
+@media (max-width: 834px) {
+  .menu__header {
+    width: 300px;
+  }
+  .menu {
+    position: absolute;
+    background: #fff;
+    left: 20%;
+    z-index: 100;
+    padding: 30px;
+    display: none;
+  }
+  .menu__main {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .icon__toggle__menu:hover + .menu {
+    display: block;
+  }
+  .toggle {
+    display: none;
+  }
+  .toggle__menu {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+  }
+  .banner__main_content {
+    padding: 30px;
+  }
+  .main__content__web {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .main__content__left {
+    width: 100%;
+    padding-top: 1319px;
+    padding-bottom: 19px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .carousel__main {
+    width: 100%;
+  }
+  .carousel__main h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 300px;
+  }
+  .content {
+    display: flex;
+    width: 594px;
+  }
+  .overview {
+    width: 100%;
+  }
+  .learn {
+    width: 100%;
+  }
+  .list__learn {
+    width: 100%;
+  }
+  .list__learn_child {
+    width: 100%;
+  }
+  .requirements {
+    width: 100%;
+  }
+  .list__require {
+    width: 100%;
+  }
+  .curriculum {
+    width: 100%;
+  }
+  .top__curriculum {
+    width: 544px;
+  }
+  .center__curriculum {
+    width: 100%;
+  }
+  .list__intro {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+  }
+  .about__main {
+    width: 100%;
+  }
+  .about__child {
+    width: 100%;
+  }
+  .about__info__child {
+    width: 100%;
+  }
+  .feedback {
+    width: 100%;
+  }
+  .feedback__main {
+    width: 100%;
+  }
+  .feedback__main_left_child {
+    width: 400px;
+  }
+  .main__content__right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 1319px;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    border-radius: 16px;
+    border: 1px solid #dfeaeb;
+    background: var(--White);
+  }
+  .footer {
+    align-items: flex-start;
+    width: 100%;
+    gap: 18px;
+  }
+  .main__footer {
+    display: flex;
+    width: 100%;
+  }
+  .top__footer {
+    width: 534px;
+    align-items: start;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  .logo__footer {
+    font-size: 40px;
+  }
+  .contact__footer {
+    display: flex;
+    gap: 30px;
+  }
+  .contact__footer div {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+  }
+
+  .bot__footer {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: flex;
+    gap: 30px;
+  }
+  .menu__header {
+    margin-left: -100px;
+    width: 300px;
+  }
+  .title__language{
+    display: none;
+  }
+  .icon__toggle__menu:hover + .menu {
+    display: block;
+  }
+  .banner__main_content {
+    padding: 20px;
+  }
+  .banner__main {
+    max-width: 100%;
+  }
+  .main__content__web {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .main__content__left {
+    max-width: 100%;
+  }
+  .carousel__main {
+    max-width: 100%;
+  }
+  .carousel__main h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 100px;
+  }
+  .img__carousel {
+    display: none;
+  }
+  .img__carousel_center {
+    max-width: 100%;
+  }
+  .carousel svg {
+    position: absolute;
+    left: 163px;
+  }
+  .content__main{
+    width: 100%;
+  }
+  .content {
+    margin: 0;
+    padding: 0 5px;
+    display: flex;
+    width: 100%;
+  }
+  .overview {
+    max-width: 100%;
+  }
+  .view__more{
+    max-width: 100%;
+  }
+  .learn {
+    max-width: 100%;
+  }
+  .list__learn {
+    max-width: 100%;
+  }
+  .list__learn_child {
+    max-width: 100%;
+  }
+  .requirements {
+    max-width: 100%;
+  }
+  .list__require {
+    max-width: 100%;
+  }
+  .curriculum {
+    max-width: 100%;
+  }
+  .top__curriculum {
+    max-width: 100%;
+  }
+  .center__curriculum {
+    max-width: 100%;
+  }
+  .list__intro {
+    max-width: 100%;
+  }
+  .about {
+    max-width: 100%;
+  }
+  .about__main {
+    max-width: 100%;
+  }
+  .about__child {
+   max-width: 100%;
+  }
+  .about__info__child {
+    max-width: 100%;
+  }
+  .feedback {
+    max-width: 100%;
+  }
+  .feedback__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .feedback__main_left {
+    max-width: 100%;
+  }
+  .feedback__main_left_child {
+    max-width: 100%;
+  }
+  .main__content__right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 1319px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    border-radius: 16px;
+    border: 1px solid #dfeaeb;
+    background: var(--White);
+  }
+  .footer {
+    align-items: flex-start;
+    max-width: 100%;
+    gap: 18px;
+  }
+  .main__footer {
+    display: flex;
+    max-width: 100%;
+  }
+  .top__footer {
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  .logo__footer {
+    font-size: 40px;
+  }
+  .contact__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+  .bot__footer {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

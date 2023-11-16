@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link href="https://fonts.cdnfonts.com/css/sf-ui-display" rel="stylesheet">
 
 </head>
@@ -13,25 +14,61 @@
 <body>
     <header class="header">
         <nav class="menu__header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <g clip-path="url(#clip0_1_891)">
-                    <path
-                        d="M23 10.9998H1C0.447715 10.9998 0 11.4475 0 11.9998C0 12.552 0.447715 12.9998 1 12.9998H23C23.5523 12.9998 24 12.552 24 11.9998C24 11.4475 23.5523 10.9998 23 10.9998Z"
-                        fill="#374957" />
-                    <path
-                        d="M23 4.00024H1C0.447715 4.00024 0 4.44796 0 5.00024C0 5.55253 0.447715 6.00024 1 6.00024H23C23.5523 6.00024 24 5.55253 24 5.00024C24 4.44796 23.5523 4.00024 23 4.00024Z"
-                        fill="#374957" />
-                    <path
-                        d="M23 18H1C0.447715 18 0 18.4477 0 19C0 19.5523 0.447715 20 1 20H23C23.5523 20 24 19.5523 24 19C24 18.4477 23.5523 18 23 18Z"
-                        fill="#374957" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_1_891">
-                        <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
-            <div>
+            <div class="icon__toggle__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_1_891)">
+                        <path
+                            d="M23 10.9998H1C0.447715 10.9998 0 11.4475 0 11.9998C0 12.552 0.447715 12.9998 1 12.9998H23C23.5523 12.9998 24 12.552 24 11.9998C24 11.4475 23.5523 10.9998 23 10.9998Z"
+                            fill="#374957" />
+                        <path
+                            d="M23 4.00024H1C0.447715 4.00024 0 4.44796 0 5.00024C0 5.55253 0.447715 6.00024 1 6.00024H23C23.5523 6.00024 24 5.55253 24 5.00024C24 4.44796 23.5523 4.00024 23 4.00024Z"
+                            fill="#374957" />
+                        <path
+                            d="M23 18H1C0.447715 18 0 18.4477 0 19C0 19.5523 0.447715 20 1 20H23C23.5523 20 24 19.5523 24 19C24 18.4477 23.5523 18 23 18Z"
+                            fill="#374957" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_891">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="toggle">
+                <div class="toggle__menu">
+                    <div id="tooltip" role="tooltip">
+                        <div id="arrow" data-popper-arrow></div>
+                    </div>
+                    <div class="toggle__child">
+                        <div class="toggle__menu__child">
+                            <img src="./public/images/check.png" alt="">
+                            <div>Development</div>
+                        </div>
+                        <div>
+                            <img src="./public/images/Frame (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="toggle__child">
+                        <div class="toggle__menu__child">
+                            <img src="./public/images/check.png" alt="">
+                            <div>Business</div>
+                        </div>
+                        <div>
+                            <img src="./public/images/Frame (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="toggle__child">
+                        <div class="toggle__menu__child">
+                            <img src="./public/images/check.png" alt="">
+                            <div>All courses</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="menu">
                 <ul class="menu__main">
                     <li><a href="#" class="menu__child">Categories</a></li>
                     <li><a href="#" class="menu__child">Course</a></li>
@@ -191,9 +228,9 @@
                     <h3>Testimonnials</h3>
                 </div>
                 <div class="carousel">
-                    <img src="./public/images/Rectangle 1.png" alt="carousel" style="margin-right: -15px;">
-                    <img src="./public/images/Rectangle 2.png" alt="carousel">
-                    <img src="./public/images/Rectangle 3.png" alt="carousel" style="margin-left: -15px;">
+                    <img class="img__carousel" src="./public/images/Rectangle 1.png" alt="carousel" style="margin-right: -15px;">
+                    <img class="img__carousel_center" src="./public/images/Rectangle 2.png" alt="carousel">
+                    <img class="img__carousel" src="./public/images/Rectangle 3.png" alt="carousel" style="margin-left: -15px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                         <g clip-path="url(#clip0_1_99)">
                             <g filter="url(#filter0_d_1_99)">
@@ -634,7 +671,7 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p >00:53:01 Hours On demand videos</p>
+                        <p>00:53:01 Hours On demand videos</p>
                     </div>
                     <div style="display: flex; align-items: center; gap: 6px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -744,7 +781,7 @@
         </main>
     </div>
 
-    <footer>
+    <footer class="footer">
         <div class="main__footer">
             <div class="top__footer">
                 <p class="logo__footer">LOGO</p>
